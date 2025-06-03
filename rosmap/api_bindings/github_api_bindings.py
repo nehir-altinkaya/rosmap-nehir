@@ -57,6 +57,7 @@ class GithubApiBindings:
             return json.loads('{"items":{}}')
 
     def get_urls_of_topic(self, topic: str) -> set:
+        print(f"Using githubAPI with topic: {topic}")
         """
         Fetches all repository URLs form GitHub API.
         :param topic: The topic to search for.

@@ -29,6 +29,7 @@ class GitRepositoryCloner(IRepositoryCloner):
 
         for url in repository_set:
             # Get repo name
+            print(f"Repositories to clone: {repository_set}")
 
             regex_result = re.search(REGEX_REPO_NAME, url)
             if regex_result is not None:

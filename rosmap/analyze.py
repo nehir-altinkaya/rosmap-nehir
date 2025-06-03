@@ -12,6 +12,7 @@ PROGRAM_DESCRIPTION = ""
 def load_parsers(settings: dict) -> list:
     return ModuleLoader.load_modules(os.path.dirname(os.path.realpath(__file__)),
                                         "repository_parsers",
+                                        settings["parsers"],
                                         ["IRepositoryParser"],
                                         "RepositoryParser",
                                         settings)
@@ -73,7 +74,14 @@ def write_to_file(path, repo_details):
 
 
 def main():
-    # Create argument-parser
+    #added this to see if the main function is called
+    def main():
+        try:
+            print("=== MAIN STARTED ===")
+        except Exception as e:
+            print(f"An error occurred: {e}")
+    print("Running:", __file__)
+    
     parser = argparse.ArgumentParser(description=PROGRAM_DESCRIPTION)
     parser.add_argument("--config", "-c", help="Add a path to the config.json file that contains, usernames, api-tokens and settings.", default=os.path.dirname(os.path.realpath(__file__)) + "/config/config.json")
     parser.add_argument("--load_existing", "-l", help="Use this flag to load previous link-files from workspace.", default=False, action="store_true")
@@ -83,6 +91,7 @@ def main():
 
     # Parse arguments
     arguments = parser.parse_args()
+    print("Arguments:", arguments)
 
     # Set up logger
     logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.INFO)
@@ -100,6 +109,8 @@ def main():
     # Load settings.
     configfile = open(arguments.config, "r")
     settings = json.loads(configfile.read())
+    print("=== SETTINGS LOADED ===")
+    print("settings are: ", settings)
 
     # Expand home directories.
     settings["analysis_workspace"] = os.path.expanduser(settings["analysis_workspace"])
@@ -125,7 +136,8 @@ def main():
         logging.info("[Parser]: Writing repository links to file...")
         for vcs, repository_set in repositories.items():
             logging.info("[Parser]: Writing file for " + vcs)
-            with open(settings["analysis_workspace"]+"links/" + vcs, "w+") as output_file:
+            #changed here to use os.path.join for better path handling
+            with open(os.path.join(settings["analysis_workspace"], "links", vcs), "w+") as output_file:
                 for repository in repository_set:
                     output_file.write(repository + "\n")
     else:
@@ -136,6 +148,7 @@ def main():
 
     if not arguments.skip_download:
         cloners = load_cloners(settings)
+        print("=== CLONERS LOADED ===")
 
         logging.info("[Cloner]: Cloning repositories...")
 
@@ -157,6 +170,21 @@ def main():
 
         write_to_file(arguments.output, repo_details)
 
+
+        logging.info("Starting to parse repositories...")
+        pars = load_parsers(settings)
+        for parser in pars:
+            parser.parse_repositories(repositories)
+            logging.info("Finished parsing repositories.")
+            logging.info("Found the following repositories:")
+
+        for vcs, repo_set in repositories.items():
+            logging.info(f"VCS: {vcs}, Repositories: {len(repo_set)}")
+            
+        # Log number of repositories found per VCS
+        for vcs, repo_set in repositories.items():
+            logging.info(f"VCS: {vcs}, Repositories: {len(repo_set)}")
+            
         remote_analyzers = load_remote_analyzers(settings)
         for scs in settings["social_coding_sites"]:
             if scs in remote_analyzers:
@@ -167,6 +195,11 @@ def main():
         write_to_file(arguments.output, repo_details)
 
     logging.info("Actions finished. Exiting.")
+
+#calling main function as it wasnt done before
+if __name__ == "__main__":
+    print("=== MAIN STARTED ===")
+    main()
 
 
 
