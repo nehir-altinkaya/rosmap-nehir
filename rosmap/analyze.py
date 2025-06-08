@@ -71,8 +71,8 @@ def load_remote_analyzers(settings: dict) -> dict:
 
 def write_to_file(path, repo_details):
     print(f"Writing repository details to {path}")
-    output_file = open(path, "w")
-    output_file.write(json.dumps(list(repo_details.values())))
+    with open(path, "w") as output_file:
+        json.dump(list(repo_details.values()), output_file, indent=4)
     output_file.close()
 
 
