@@ -5,6 +5,8 @@ import os
 import logging
 from rosmap.loaders.module_loader import ModuleLoader
 from shutil import copy
+from rosmap.repository_parsers.github_repository_parser import GithubRepositoryParser
+
 
 PROGRAM_DESCRIPTION = ""
 
@@ -47,7 +49,7 @@ def load_file_analyzers() -> list:
 def load_analyzers(settings: dict) -> dict:
     analyzers = dict()
     for analyzer in ModuleLoader.load_modules(os.path.dirname(os.path.realpath(__file__)),
-                                              "rosmap/repository_analyzers/offline",
+                                              "repository_analyzers/offline",
                                               ["IRepositoryAnalyzer", "AbstractRepositoryAnalyzer"],
                                               "RepositoryAnalyzer",
                                               load_package_analyzers(settings),
@@ -59,7 +61,7 @@ def load_analyzers(settings: dict) -> dict:
 def load_remote_analyzers(settings: dict) -> dict:
     remote_analyzers = dict()
     for analyzer in ModuleLoader.load_modules(os.path.dirname(os.path.realpath(__file__)),
-                                              "rosmap/repository_analyzers/online",
+                                              "repository_analyzers/online",
                                               ["ISCSRepositoryAnalyzer"],
                                               "RepositoryAnalyzer",
                                               settings):
@@ -68,6 +70,7 @@ def load_remote_analyzers(settings: dict) -> dict:
 
 
 def write_to_file(path, repo_details):
+    print(f"Writing repository details to {path}")
     output_file = open(path, "w")
     output_file.write(json.dumps(list(repo_details.values())))
     output_file.close()
@@ -81,7 +84,7 @@ def main():
         except Exception as e:
             print(f"An error occurred: {e}")
     print("Running:", __file__)
-    
+
     parser = argparse.ArgumentParser(description=PROGRAM_DESCRIPTION)
     parser.add_argument("--config", "-c", help="Add a path to the config.json file that contains, usernames, api-tokens and settings.", default=os.path.dirname(os.path.realpath(__file__)) + "/config/config.json")
     parser.add_argument("--load_existing", "-l", help="Use this flag to load previous link-files from workspace.", default=False, action="store_true")
@@ -121,6 +124,30 @@ def main():
     for vcs in settings["version_control_systems"]:
         repositories[vcs] = set()
 
+    parser = GithubRepositoryParser({
+        'github_username': 'nehir-altinkaya',
+        'github_password': '',
+        'github_search_topic': 'ros2',
+        'github_search_rate_limit': 1000,
+        'parsers': ['GithubRepositoryParser'],
+        'version_control_systems': ['git', 'svn', 'hg'],
+        "rosdistro_repo_parser": {
+            "rosdistro_url": "https://github.com/ros/rosdistro",
+            "rosdistro_workspace": "~/.rosdistro_workspace"
+        },
+        'analysis_workspace': '~/.analysis_workspace',
+        'repository_folder': 'repositories/',
+        "version_control_systems": ["git","svn","hg"],
+        'rosdistro_workspace': '~/.rosdistro_workspace',
+        'parsers': ['GithubRepositoryParser', 'RosdistroRepositoryParser'],
+        'repository_cloners': ['GitRepositoryCloner', 'SvnRepositoryCloner', 'HgRepositoryCloner'],
+        'repository_analyzers': ['GitRepositoryAnalyzer', 'SvnRepositoryAnalyzer', 'HgRepositoryAnalyzer'],
+        'package_analyzers': ['PackageAnalyzer'],
+        'file_analyzers': ['FileAnalyzer'],
+        'social_coding_sites': ['github']
+        })
+    parser.parse_repositories(repository_dict=repositories)
+
     if not arguments.load_existing:
         # Parse repositories
         logging.info("[Parser]: Parsing repositories...")
@@ -142,7 +169,7 @@ def main():
                     output_file.write(repository + "\n")
     else:
         for vcs in settings["version_control_systems"]:
-            with open(settings["analysis_workspace"]+"links/" + vcs, "r") as output_file:
+            with open(settings["analysis_workspace"]+"/links/" + vcs, "r") as output_file:
                 for line in output_file:
                     repositories[vcs].add(line.rstrip("\r\n"))
 
@@ -151,7 +178,7 @@ def main():
         print("=== CLONERS LOADED ===")
 
         logging.info("[Cloner]: Cloning repositories...")
-
+        print(f"Calling clone_repositories for VCS {vcs} with {len(repositories[vcs])} repositories.") 
         for vcs in settings["version_control_systems"]:
             if vcs in cloners:
                 cloners[vcs].clone_repositories(repositories[vcs])
@@ -168,8 +195,15 @@ def main():
             else:
                 logging.warning("Cannot analyze repositories of type " + vcs + ": No analyzer found for this type...")
 
+            if repo_details:
+                logging.info("Writing analysis results to output.json...")
+                write_to_file(arguments.output, repo_details)
+            else:
+                logging.warning("No analysis results to write. output.json will not be created.")  
         write_to_file(arguments.output, repo_details)
 
+   
+        
 
         logging.info("Starting to parse repositories...")
         pars = load_parsers(settings)
@@ -192,6 +226,12 @@ def main():
             else:
                 logging.warning("Cannot analyze scs of type " + scs + ": No analyzer found for this type...")
 
+            if repo_details:
+                logging.info("Writing analysis results to output.json...")
+                write_to_file(arguments.output, repo_details)
+            else:
+                logging.warning("No analysis results to write. output.json will not be created.")
+                
         write_to_file(arguments.output, repo_details)
 
     logging.info("Actions finished. Exiting.")

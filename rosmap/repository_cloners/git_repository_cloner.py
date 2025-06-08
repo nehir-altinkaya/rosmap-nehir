@@ -12,11 +12,20 @@ REGEX_REPO_NAME_GROUP = 2
 
 
 class GitRepositoryCloner(IRepositoryCloner):
+    print("Inside GitRepositoryCloner")
 
     def __init__(self, settings: dict):
         self.__settings = settings
 
     def clone_repositories(self, repository_set: set) -> None:
+        print("Inside GitRepositoryCloner.clone_repositories")
+        print("Settings: ", self.__settings)
+        # Check if git is installed.
+        if not os.path.exists(self.__settings["analysis_workspace"] + "/git_askpass.py"):
+            logging.error("[GitRepositoryCloner]: git_askpass.py not found in analysis workspace. "
+                          "Please make sure it is present in the workspace directory.")
+            return
+        
         copy(os.path.dirname(os.path.realpath(__file__)) + "/git_askpass.py", self.__settings["analysis_workspace"])
         os.chmod(self.__settings["analysis_workspace"] + "/git_askpass.py", 0o777)
         os.environ['GIT_ASKPASS'] = self.__settings["analysis_workspace"] + "/git_askpass.py"
@@ -30,7 +39,7 @@ class GitRepositoryCloner(IRepositoryCloner):
         for url in repository_set:
             # Get repo name
             print(f"Repositories to clone: {repository_set}")
-
+            print(f"Number of repositories to clone: {len(repository_set)}")
             regex_result = re.search(REGEX_REPO_NAME, url)
             if regex_result is not None:
                 repo_name = regex_result.group(REGEX_REPO_NAME_GROUP)

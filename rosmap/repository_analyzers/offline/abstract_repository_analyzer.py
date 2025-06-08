@@ -1,4 +1,4 @@
-from repository_analyzers.offline.i_repository_analyzer import IRepositoryAnalyzer
+from rosmap.repository_analyzers.offline.i_repository_analyzer import IRepositoryAnalyzer
 from abc import ABCMeta, abstractmethod
 import os
 

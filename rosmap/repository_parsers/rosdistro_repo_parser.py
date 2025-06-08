@@ -68,6 +68,9 @@ class RosdistroRepositoryParser(IRepositoryParser):
                 pass
 
     def parse_repositories(self, repository_dict: dict) -> None:
+        print("=== Inside parse_repositories ===")
+        print(f"Number of repositories passed: {len(repository_dict)}")
+       
         # Actually get the repository
         self.__get_rosdistro_repository()
 

@@ -1,17 +1,18 @@
 {
-  "github_username": "nehir-altinkaya",
-  "github_password": "",
+  "github_username":"nehir-altinkaya",
+  "github_password":"",
   "github_search_topic": "ros2",
   "github_search_rate_limit": 1800,
   "github_api_rate_limit": 5000,
   "rosdistro_url": "https://github.com/ros/rosdistro",
   "rosdistro_workspace": "~/.rosdistro_workspace",
+  "bitbucket_api_rate_limit": 5000,
 
-  "parsers": ["github_repository_parser", "rosdistro_repo_parser"],
+  "parsers": ["github_repository_parser", "rosdistro_repo_parser", "svn_repository_parser", "hg_repository_parser", "git_repository_parser"],
   "parsers_config": {
     "github_repository_parser": {
-      "github_username": "nehir-altinkaya",
-      "github_password": "",
+      "github_username":"nehir-altinkaya",
+      "github_password":"",
       "github_search_topic": "ros2",
       "github_search_rate_limit": 1800,
       "github_api_rate_limit": 5000

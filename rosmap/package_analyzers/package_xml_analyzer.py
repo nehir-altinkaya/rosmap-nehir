@@ -13,9 +13,13 @@ class PackageXmlAnalyzer(PackageAnalyzer):
         try:
             file = open(path, "r")
             tree = parse(file)
+        except FileNotFoundError:
+            logging.warning("[PackageXmlAnalyzer]: Could not open " + path + "; omitting file.")
+            return dependencies
         except ParseError:
             logging.warning("[PackageXmlAnalyzer]: Could not parse " + path + "; omitting file.")
             return dependencies
+        
 
         element = tree.getroot()
         packagename = element.find('name').text
@@ -25,6 +29,7 @@ class PackageXmlAnalyzer(PackageAnalyzer):
                 self.add_dependency(packagename, element.text, dependencies)
 
     def _analyze(self, path: str) -> dict:
+        print(f"[DEBUG] Analyzing {path}") 
 
         packages = dict()
         filellist = self.search_files(path, "package.xml")
