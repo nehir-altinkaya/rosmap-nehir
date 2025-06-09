@@ -156,8 +156,8 @@ def main():
             parser.parse_repositories(repositories)
 
         # Create folder
-        if not os.path.exists(settings["analysis_workspace"]):
-            os.makedirs(settings["analysis_workspace"]+"links/")
+        links_dir = os.path.join(os.path.expanduser(settings["analysis_workspace"]), "links")
+        os.makedirs(links_dir, exist_ok=True)
 
         # Write to file.
         logging.info("[Parser]: Writing repository links to file...")
