@@ -1,0 +1,1501 @@
+[
+    {
+        "url": "https://github.com/davood-dorostkar/ROS2_Tutorials.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1627160612,
+        "packages": [
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "rclpy",
+                    "sensor_msgs",
+                    "turtlebot3_msgs"
+                ],
+                "name": "turtlebot3_example"
+            },
+            {
+                "dependencies": [
+                    "rclcpp"
+                ],
+                "name": "pkg2"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "turtlebot3_cartographer"
+            },
+            {
+                "dependencies": [
+                    "rclpy"
+                ],
+                "name": "pkg1"
+            },
+            {
+                "dependencies": [
+                    "urdf"
+                ],
+                "name": "turtlebot3_description"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "rclpy"
+                ],
+                "name": "turtlebot3_teleop"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "rclpy"
+                ],
+                "name": "my_package"
+            }
+        ],
+        "cpplint_errors": 108,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/cyberbotics/webots_ros2.git",
+        "contributors": 48,
+        "branch_count": 53,
+        "last_update": 1741886761,
+        "packages": [
+            {
+                "dependencies": [
+                    "builtin_interfaces",
+                    "python3-collada",
+                    "python3-lark-parser",
+                    "xacro"
+                ],
+                "name": "webots_ros2_importer"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "python3-opencv",
+                    "python3-numpy",
+                    "builtin_interfaces",
+                    "ackermann_msgs",
+                    "webots_ros2_driver"
+                ],
+                "name": "webots_ros2_tesla"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "std_msgs",
+                    "nav_msgs",
+                    "sensor_msgs",
+                    "geometry_msgs",
+                    "webots_ros2_msgs",
+                    "builtin_interfaces",
+                    "tf2_ros",
+                    "rviz2",
+                    "diff_drive_controller",
+                    "joint_state_broadcaster",
+                    "robot_state_publisher",
+                    "controller_manager",
+                    "webots_ros2_driver",
+                    "webots_ros2_control"
+                ],
+                "name": "webots_ros2_epuck"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "builtin_interfaces",
+                    "webots_ros2_driver"
+                ],
+                "name": "webots_ros2_mavic"
+            },
+            {
+                "dependencies": [
+                    "webots_ros2_driver",
+                    "webots_ros2_control",
+                    "diff_drive_controller",
+                    "joint_state_broadcaster",
+                    "controller_manager",
+                    "laser_filters",
+                    "robot_localization",
+                    "robot_state_publisher"
+                ],
+                "name": "webots_ros2_husarion"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "ros2bag",
+                    "rosbag2_storage_default_plugins",
+                    "webots_ros2_driver"
+                ],
+                "name": "webots_ros2_tests"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "geometry_msgs",
+                    "builtin_interfaces",
+                    "rviz2",
+                    "webots_ros2_driver",
+                    "webots_ros2_control",
+                    "diff_drive_controller",
+                    "joint_state_broadcaster",
+                    "robot_state_publisher",
+                    "controller_manager",
+                    "tf2_ros",
+                    "rviz2"
+                ],
+                "name": "webots_ros2_tiago"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "std_msgs",
+                    "builtin_interfaces",
+                    "webots_ros2_control",
+                    "webots_ros2_driver",
+                    "webots_ros2_epuck",
+                    "webots_ros2_importer",
+                    "webots_ros2_mavic",
+                    "webots_ros2_msgs",
+                    "webots_ros2_tesla",
+                    "webots_ros2_tiago",
+                    "webots_ros2_turtlebot",
+                    "webots_ros2_universal_robot",
+                    "webots_ros2_crazyflie",
+                    "webots_ros2_husarion"
+                ],
+                "name": "webots_ros2"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "builtin_interfaces",
+                    "webots_ros2_driver",
+                    "tf_transformations"
+                ],
+                "name": "webots_ros2_crazyflie"
+            },
+            {
+                "dependencies": [
+                    "builtin_interfaces",
+                    "geometry_msgs",
+                    "std_msgs",
+                    "vision_msgs"
+                ],
+                "name": "webots_ros2_msgs"
+            },
+            {
+                "dependencies": [
+                    "ros_environment"
+                ],
+                "name": "webots_ros2_driver"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "builtin_interfaces",
+                    "control_msgs",
+                    "trajectory_msgs",
+                    "rviz2",
+                    "webots_ros2_driver",
+                    "webots_ros2_control",
+                    "robot_state_publisher",
+                    "controller_manager",
+                    "joint_trajectory_controller",
+                    "joint_state_broadcaster",
+                    "xacro"
+                ],
+                "name": "webots_ros2_universal_robot"
+            },
+            {
+                "dependencies": [
+                    "ros_environment"
+                ],
+                "name": "webots_ros2_control"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "builtin_interfaces",
+                    "webots_ros2_driver",
+                    "webots_ros2_control",
+                    "diff_drive_controller",
+                    "joint_state_broadcaster",
+                    "robot_state_publisher",
+                    "controller_manager",
+                    "tf2_ros",
+                    "rviz2"
+                ],
+                "name": "webots_ros2_turtlebot"
+            }
+        ],
+        "cpplint_errors": 31128,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/captain-bender/articubot_one.git",
+        "contributors": 1,
+        "branch_count": 4,
+        "last_update": 1727549602,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "articubot_one"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/channingko-madden/sim_waypoint_path.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1668101141,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclpy",
+                    "geometry_msgs",
+                    "action_msgs",
+                    "visualization_msgs",
+                    "ros2launchK"
+                ],
+                "name": "sim_waypoint_path"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/clydemcqueen/orca3.git",
+        "contributors": 1,
+        "branch_count": 6,
+        "last_update": 1655487202,
+        "packages": [
+            {
+                "dependencies": [
+                    "gazebo_dev",
+                    "gazebo_ros",
+                    "geometry_msgs",
+                    "orca_description",
+                    "orca_msgs",
+                    "orca_shared",
+                    "rclcpp",
+                    "ros2_shared",
+                    "rclpy",
+                    "gazebo_ros_pkgs",
+                    "sim_fiducial"
+                ],
+                "name": "orca_gazebo"
+            },
+            {
+                "dependencies": [
+                    "fiducial_vlam_msgs",
+                    "geometry_msgs",
+                    "image_geometry",
+                    "orca_msgs",
+                    "rclcpp",
+                    "ros2_shared",
+                    "sensor_msgs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "tf2_ros"
+                ],
+                "name": "orca_shared"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake",
+                    "xacro"
+                ],
+                "name": "orca_description"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "orca_bringup"
+            },
+            {
+                "dependencies": [
+                    "br_ms5837",
+                    "orca_msgs",
+                    "rclcpp",
+                    "rclpy",
+                    "ros2_shared"
+                ],
+                "name": "orca_driver"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "orca_msgs"
+            },
+            {
+                "dependencies": [
+                    "camera_info_manager",
+                    "cv_bridge",
+                    "fiducial_vlam_msgs",
+                    "geometry_msgs",
+                    "image_geometry",
+                    "nav_msgs",
+                    "orca_msgs",
+                    "orca_shared",
+                    "rclcpp",
+                    "ros2_shared",
+                    "sensor_msgs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "tf2_ros"
+                ],
+                "name": "orca_localize"
+            },
+            {
+                "dependencies": [
+                    "camera_info_manager",
+                    "geometry_msgs",
+                    "h264_msgs",
+                    "libgstreamer1.0-dev",
+                    "libgstreamer-plugins-base1.0-dev",
+                    "orb_slam2_ros",
+                    "orca_msgs",
+                    "orca_shared",
+                    "rclcpp",
+                    "ros2_shared"
+                ],
+                "name": "orca_topside"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "orca_msgs",
+                    "orca_shared",
+                    "rclcpp",
+                    "ros2_shared",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "tf2_ros",
+                    "ukf"
+                ],
+                "name": "orca_base"
+            },
+            {
+                "dependencies": [
+                    "builtin_interfaces",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "nav2_core",
+                    "nav2_costmap_2d",
+                    "nav2_util",
+                    "nav2_msgs",
+                    "orca_shared",
+                    "rclcpp",
+                    "rclcpp_action",
+                    "rclcpp_lifecycle",
+                    "pluginlib",
+                    "std_msgs",
+                    "tf2_ros",
+                    "visualization_msgs"
+                ],
+                "name": "orca_nav2"
+            }
+        ],
+        "cpplint_errors": 619,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/fbotathome/fbot_manipulator.git",
+        "contributors": 3,
+        "branch_count": 6,
+        "last_update": 1749243476,
+        "packages": [
+            {
+                "dependencies": [
+                    "interbotix_xs_modules",
+                    "joint_state_publisher",
+                    "joint_state_publisher_gui",
+                    "robot_state_publisher",
+                    "rviz2",
+                    "xacro",
+                    "urdf"
+                ],
+                "name": "interbotix_xsarm_descriptions"
+            },
+            {
+                "dependencies": [
+                    "interbotix_perception_modules",
+                    "interbotix_xsarm_control",
+                    "realsense2_camera"
+                ],
+                "name": "interbotix_xsarm_perception"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xsarm_descriptions",
+                    "interbotix_xs_modules",
+                    "interbotix_xs_ros_control",
+                    "interbotix_common_sim",
+                    "controller_manager",
+                    "effort_controllers",
+                    "gazebo_ros",
+                    "gazebo_ros2_control",
+                    "joint_trajectory_controller"
+                ],
+                "name": "interbotix_xsarm_sim"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xsarm_control",
+                    "interbotix_xs_msgs",
+                    "rosbag",
+                    "roscpp",
+                    "rospy",
+                    "rqt_plot",
+                    "sensor_msgs"
+                ],
+                "name": "interbotix_xsarm_diagnostic_tool"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xs_msgs",
+                    "interbotix_xs_modules",
+                    "interbotix_xsarm_control",
+                    "launch",
+                    "launch_ros",
+                    "joy",
+                    "rclcpp",
+                    "rclpy",
+                    "sensor_msgs",
+                    "std_msgs"
+                ],
+                "name": "interbotix_xsarm_joy"
+            },
+            {
+                "dependencies": [
+                    "interbotix_gravity_compensation",
+                    "interbotix_xsarm_control"
+                ],
+                "name": "interbotix_xsarm_gravity_compensation"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xs_msgs",
+                    "interbotix_xsarm_control",
+                    "roscpp",
+                    "sensor_msgs"
+                ],
+                "name": "interbotix_xsarm_pid"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xsarm_control",
+                    "interbotix_xs_modules",
+                    "interbotix_xsarm_dual",
+                    "interbotix_xsarm_joy"
+                ],
+                "name": "interbotix_xsarm_dual_joy"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xsarm_moveit",
+                    "interbotix_moveit_interface"
+                ],
+                "name": "interbotix_xsarm_moveit_interface"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xs_modules",
+                    "interbotix_xsarm_control",
+                    "launch_ros",
+                    "launch",
+                    "rviz2",
+                    "tf2_ros"
+                ],
+                "name": "interbotix_xsarm_dual"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xs_msgs",
+                    "interbotix_xsarm_control",
+                    "rosbag2",
+                    "rclcpp",
+                    "rviz2",
+                    "sensor_msgs",
+                    "tf2_ros"
+                ],
+                "name": "interbotix_xsarm_puppet"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "interbotix_ros_xsarms_examples"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xs_sdk",
+                    "interbotix_xs_modules",
+                    "interbotix_xsarm_descriptions"
+                ],
+                "name": "interbotix_xsarm_control"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xs_sdk",
+                    "interbotix_xs_modules",
+                    "interbotix_xsarm_control",
+                    "interbotix_xsarm_descriptions",
+                    "interbotix_xsarm_sim",
+                    "interbotix_xsarm_moveit",
+                    "interbotix_xsarm_perception",
+                    "interbotix_xsarm_ros_control"
+                ],
+                "name": "interbotix_ros_xsarms"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xsarm_control",
+                    "interbotix_xs_ros_control"
+                ],
+                "name": "interbotix_xsarm_ros_control"
+            },
+            {
+                "dependencies": [
+                    "moveit_ros_move_group",
+                    "moveit_simple_controller_manager",
+                    "moveit_kinematics",
+                    "moveit_planners_ompl",
+                    "moveit_ros_visualization",
+                    "moveit_setup_assistant",
+                    "joint_state_publisher",
+                    "robot_state_publisher",
+                    "xacro",
+                    "interbotix_xs_modules",
+                    "interbotix_xsarm_sim",
+                    "interbotix_xsarm_descriptions",
+                    "interbotix_xsarm_ros_control"
+                ],
+                "name": "interbotix_xsarm_moveit"
+            },
+            {
+                "dependencies": [
+                    "interbotix_slate_driver",
+                    "interbotix_slate_msgs"
+                ],
+                "name": "interbotix_ros_slate"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "interbotix_slate_driver"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "interbotix_slate_msgs"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclpy",
+                    "sensor_msgs",
+                    "urdf",
+                    "yaml-cpp",
+                    "interbotix_xs_msgs",
+                    "interbotix_xs_driver"
+                ],
+                "name": "interbotix_xs_sdk"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "interbotix_xs_msgs"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "interbotix_ros_xseries"
+            },
+            {
+                "dependencies": [
+                    "dynamixel_workbench_toolbox",
+                    "yaml-cpp"
+                ],
+                "name": "interbotix_xs_driver"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "dynamixel_sdk"
+                ],
+                "name": "dynamixel_workbench_toolbox"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "interbotix_footswitch_msgs"
+            },
+            {
+                "dependencies": [
+                    "interbotix_footswitch_msgs",
+                    "libhidapi-dev",
+                    "libusb-1.0-dev",
+                    "rclcpp_components",
+                    "rclcpp"
+                ],
+                "name": "interbotix_footswitch_driver"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "graph_msgs",
+                    "moveit_common",
+                    "moveit_core",
+                    "moveit_ros_planning",
+                    "rclcpp",
+                    "rviz_visual_tools",
+                    "std_msgs",
+                    "tf2_eigen",
+                    "tf2_ros",
+                    "trajectory_msgs",
+                    "visualization_msgs"
+                ],
+                "name": "moveit_visual_tools"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xs_modules",
+                    "interbotix_xs_ros_control",
+                    "interbotix_xs_rviz"
+                ],
+                "name": "interbotix_xs_toolbox"
+            },
+            {
+                "dependencies": [
+                    "action_msgs",
+                    "builtin_interfaces",
+                    "geometry_msgs",
+                    "interbotix_common_modules",
+                    "interbotix_common_modules",
+                    "interbotix_xs_msgs",
+                    "interbotix_xs_sdk",
+                    "launch_ros",
+                    "launch",
+                    "nav_msgs",
+                    "nav2_msgs",
+                    "rclpy",
+                    "rclpy",
+                    "rclpy",
+                    "sensor_msgs",
+                    "std_msgs",
+                    "tf_transformations",
+                    "trajectory_msgs",
+                    "xacro"
+                ],
+                "name": "interbotix_xs_modules"
+            },
+            {
+                "dependencies": [
+                    "controller_manager",
+                    "hardware_interface",
+                    "pluginlib",
+                    "rclcpp",
+                    "rclcpp_lifecycle",
+                    "ros2_controllers",
+                    "ros2controlcli",
+                    "interbotix_xs_msgs",
+                    "xacro",
+                    "sensor_msgs"
+                ],
+                "name": "interbotix_xs_ros_control"
+            },
+            {
+                "dependencies": [
+                    "qtbase5-dev"
+                ],
+                "name": "interbotix_xs_rviz"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "interbotix_common_toolbox"
+            },
+            {
+                "dependencies": [
+                    "ament_index_python",
+                    "rclcpp_components",
+                    "geometry_msgs",
+                    "rclcpp",
+                    "rclpy",
+                    "std_srvs",
+                    "tf2_msgs",
+                    "tf2_ros",
+                    "python3-yaml",
+                    "yaml-cpp"
+                ],
+                "name": "interbotix_tf_tools"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "tf_transformations",
+                    "python-transforms3d-pip",
+                    "python3-numpy"
+                ],
+                "name": "interbotix_common_modules"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "interbotix_common_sim"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "geometry_msgs",
+                    "tf2_ros",
+                    "tf2_geometry_msgs",
+                    "visualization_msgs",
+                    "interbotix_common_modules",
+                    "interbotix_perception_modules",
+                    "launch",
+                    "launch_ros",
+                    "tf_transformations",
+                    "python3-transforms3d",
+                    "realsense2_camera"
+                ],
+                "name": "interbotix_landmark_modules"
+            },
+            {
+                "dependencies": [
+                    "interbotix_xs_msgs",
+                    "kdl_parser",
+                    "orocos_kdl_vendor",
+                    "rclcpp",
+                    "sensor_msgs",
+                    "std_srvs",
+                    "yaml_cpp_vendor"
+                ],
+                "name": "interbotix_gravity_compensation"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclpy",
+                    "geometry_msgs",
+                    "interbotix_moveit_interface_msgs",
+                    "moveit_msgs",
+                    "moveit_ros_planning_interface",
+                    "moveit_visual_tools",
+                    "python_qt_binding",
+                    "tf_transformations"
+                ],
+                "name": "interbotix_moveit_interface"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "interbotix_moveit_interface_msgs"
+            },
+            {
+                "dependencies": [
+                    "cv_bridge",
+                    "pcl_conversions",
+                    "pcl_ros",
+                    "rclcpp",
+                    "tf2_ros",
+                    "tf2_geometry_msgs",
+                    "interbotix_xs_msgs",
+                    "interbotix_perception_msgs",
+                    "interbotix_common_modules",
+                    "visualization_msgs",
+                    "std_srvs",
+                    "sensor_msgs",
+                    "rcutils",
+                    "tf_transformations"
+                ],
+                "name": "interbotix_perception_pipelines"
+            },
+            {
+                "dependencies": [
+                    "apriltag_ros",
+                    "cv_bridge",
+                    "pcl_conversions",
+                    "pcl_ros",
+                    "launch",
+                    "launch_ros",
+                    "rclpy",
+                    "tf2_ros",
+                    "tf2_geometry_msgs",
+                    "interbotix_xs_msgs",
+                    "interbotix_perception_msgs",
+                    "interbotix_perception_pipelines",
+                    "interbotix_common_modules",
+                    "visualization_msgs",
+                    "std_srvs",
+                    "sensor_msgs",
+                    "rcutils",
+                    "realsense2_camera",
+                    "tf_transformations"
+                ],
+                "name": "interbotix_perception_modules"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "interbotix_perception_toolbox"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "interbotix_perception_msgs"
+            },
+            {
+                "dependencies": [
+                    "interbotix_common_modules",
+                    "interbotix_footswitch_msgs"
+                ],
+                "name": "interbotix_io_modules"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "interbotix_io_toolbox"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "interbotix_rpi_msgs"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "interbotix_rpi_msgs"
+                ],
+                "name": "interbotix_rpi_modules"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "interbotix_rpi_toolbox"
+            }
+        ],
+        "cpplint_errors": 1703,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/digital-twin-autonomous-farmbot/digital_twin.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1746190045,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "urdf",
+                    "robot_state_publisher",
+                    "joint_state_publisher",
+                    "xacro",
+                    "controller_manager",
+                    "diff_drive_controller",
+                    "joint_state_broadcaster",
+                    "launch",
+                    "launch_ros",
+                    "rviz2",
+                    "gz_ros2_control",
+                    "gz_control"
+                ],
+                "name": "robogardener"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "std_msgs"
+                ],
+                "name": "nodes"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "urdf",
+                    "robot_state_publisher",
+                    "gz_ros2_control",
+                    "gz_control"
+                ],
+                "name": "model"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/fixposition/fixposition_driver.git",
+        "contributors": 24,
+        "branch_count": 5,
+        "last_update": 1743178201,
+        "packages": [
+            {
+                "dependencies": [
+                    "boost",
+                    "roscpp",
+                    "tf",
+                    "nav_msgs",
+                    "sensor_msgs",
+                    "std_msgs",
+                    "geometry_msgs",
+                    "message_generation",
+                    "message_runtime",
+                    "fpsdk_common",
+                    "fpsdk_ros1",
+                    "fpsdk_ros2"
+                ],
+                "name": "fixposition_driver_lib"
+            },
+            {
+                "dependencies": [
+                    "builtin_interfaces"
+                ],
+                "name": "fixposition_driver_ros2"
+            },
+            {
+                "dependencies": [
+                    "ros_environment",
+                    "message_generation",
+                    "builtin_interfaces"
+                ],
+                "name": "fixposition_driver_msgs"
+            },
+            {
+                "dependencies": [
+                    "roscpp",
+                    "tf",
+                    "nav_msgs",
+                    "sensor_msgs",
+                    "std_msgs",
+                    "geometry_msgs",
+                    "message_generation",
+                    "message_runtime",
+                    "fixposition_driver_lib",
+                    "fixposition_driver_msgs",
+                    "rtcm_msgs",
+                    "tf2_ros",
+                    "tf2_geometry_msgs",
+                    "fpsdk_common",
+                    "fpsdk_ros1"
+                ],
+                "name": "fixposition_driver_ros1"
+            },
+            {
+                "dependencies": [
+                    "ros_environment",
+                    "message_generation",
+                    "builtin_interfaces"
+                ],
+                "name": "rtcm_msgs"
+            }
+        ],
+        "cpplint_errors": 1226,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/boschresearch/mrp_bench.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1677099348,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake",
+                    "rmf_building_map_tools",
+                    "ros2run"
+                ],
+                "name": "mrp_bench_maps"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_msgs",
+                    "geometry_msgs"
+                ],
+                "name": "grid_creator_plugin"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "tf2_msgs"
+                ],
+                "name": "tf2_bridge_pkg"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "nav_msgs",
+                    "visualization_msgs"
+                ],
+                "name": "bench_pkg"
+            }
+        ],
+        "cpplint_errors": 61,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/eProsima/vulcanexus.git",
+        "contributors": 23,
+        "branch_count": 16,
+        "last_update": 1746684659,
+        "packages": [
+            {
+                "dependencies": [
+                    "example_interfaces",
+                    "rclpy"
+                ],
+                "name": "clients_py"
+            },
+            {
+                "dependencies": [
+                    "example_interfaces",
+                    "rclpy"
+                ],
+                "name": "microservers_py"
+            },
+            {
+                "dependencies": [
+                    "qt5-qmake",
+                    "qtbase5-dev"
+                ],
+                "name": "docs_turtlesim"
+            },
+            {
+                "dependencies": [
+                    "fastcdr",
+                    "fastrtps",
+                    "fastdds_statistics_backend",
+                    "sqlite3_vendor"
+                ],
+                "name": "monitor_sql_tutorial"
+            },
+            {
+                "dependencies": [
+                    "fastcdr",
+                    "fastrtps",
+                    "fastdds_statistics_backend"
+                ],
+                "name": "monitor_tutorial"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rmw_fastrtps_cpp",
+                    "std_msgs"
+                ],
+                "name": "vulcanexus_change_mutable_qos"
+            },
+            {
+                "dependencies": [
+                    "rclcpp"
+                ],
+                "name": "dds2vulcanexus"
+            },
+            {
+                "dependencies": [
+                    "example_interfaces",
+                    "rcl_interfaces",
+                    "rcl",
+                    "rclcpp_components",
+                    "rclcpp",
+                    "rcpputils",
+                    "rcutils",
+                    "rmw",
+                    "rosidl_default_generators"
+                ],
+                "name": "demo_keys_cpp"
+            },
+            {
+                "dependencies": [
+                    "example_interfaces",
+                    "rcl_interfaces",
+                    "rcl",
+                    "rclcpp_components",
+                    "rclcpp",
+                    "rcpputils",
+                    "rcutils",
+                    "rmw",
+                    "rosidl_default_generators"
+                ],
+                "name": "demo_keys_filtering_cpp"
+            }
+        ],
+        "cpplint_errors": 231,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/careBT/carebt_ros2.git",
+        "contributors": 1,
+        "branch_count": 4,
+        "last_update": 1666180376,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "carebt_nav2_pyutil"
+            },
+            {
+                "dependencies": [
+                    "nav2_msgs",
+                    "rclpy",
+                    "carebt_ros2",
+                    "carebt_nav2",
+                    "carebt_nav2_pyutil"
+                ],
+                "name": "carebt_navigator"
+            },
+            {
+                "dependencies": [
+                    "carebt",
+                    "carebt_msgs",
+                    "nav2_msgs",
+                    "rclpy"
+                ],
+                "name": "carebt_ros2"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "carebt_msgs"
+            },
+            {
+                "dependencies": [
+                    "carebt_msgs",
+                    "owlready2",
+                    "rclpy",
+                    "rclpy_message_converter"
+                ],
+                "name": "carebt_kb"
+            },
+            {
+                "dependencies": [
+                    "carebt_ros2",
+                    "carebt_nav2_pyutil",
+                    "nav2_msgs",
+                    "rclpy",
+                    "ros2cli"
+                ],
+                "name": "carebt_nav2"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/dark516/Frob_robot.git",
+        "contributors": 8,
+        "branch_count": 4,
+        "last_update": 1748860594,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "frob_description"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "geometry_msgs"
+                ],
+                "name": "keyboard_vel_control"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators",
+                    "rosidl_default_runtime"
+                ],
+                "name": "frob_interfaces"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "sensor_msgs",
+                    "geometry_msgs",
+                    "joy"
+                ],
+                "name": "frob_control"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "geometry_msgs",
+                    "frob_interfaces"
+                ],
+                "name": "ros2_arduino_bridge"
+            },
+            {
+                "dependencies": [
+                    "rclpy"
+                ],
+                "name": "frob_odometry"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "rclcpp",
+                    "std_msgs",
+                    "tf2",
+                    "tf2_ros",
+                    "eigen",
+                    "cmake_modules",
+                    "sensor_msgs",
+                    "tf2_geometry_msgs"
+                ],
+                "name": "rf2o_laser_odometry"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_srvs",
+                    "sensor_msgs"
+                ],
+                "name": "sllidar_ros2"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "ros2_mpu6050"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "nav2_bringup",
+                    "slam_toolbox",
+                    "nav2_map_server",
+                    "rviz2"
+                ],
+                "name": "frob_navigation"
+            },
+            {
+                "dependencies": [
+                    "ament_python",
+                    "launch",
+                    "launch_ros",
+                    "ros2_arduino_bridge",
+                    "robot_state_publisher",
+                    "joint_state_publisher",
+                    "sllidar_ros2"
+                ],
+                "name": "frob_bringup"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "sensor_msgs",
+                    "sensor_msgs_py",
+                    "numpy",
+                    "launch_ros",
+                    "laser_geometry"
+                ],
+                "name": "lidar_filter"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "sensor_msgs",
+                    "visualization_msgs",
+                    "geometry_msgs",
+                    "std_srvs"
+                ],
+                "name": "ydlidar_ros2_driver"
+            }
+        ],
+        "cpplint_errors": 3424,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/evronix/gazebo_quadruped.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1727337891,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclpy",
+                    "std_msgs",
+                    "sensor_msgs",
+                    "trajectory_msgs"
+                ],
+                "name": "quadruped_controller"
+            },
+            {
+                "dependencies": [
+                    "launch_ros"
+                ],
+                "name": "go1_description"
+            },
+            {
+                "dependencies": [
+                    "launch_ros"
+                ],
+                "name": "go1_gazebo"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/francocipollone/multi_turtlebot_sim.git",
+        "contributors": 1,
+        "branch_count": 5,
+        "last_update": 1680708782,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "multi_turtlebot_sim"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    }
+]

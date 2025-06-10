@@ -182,7 +182,7 @@ def main():
         for vcs in settings["version_control_systems"]:
             if vcs in cloners:
                 sorted_repos = sorted(repositories[vcs])  # Convert set to sorted list
-                selected_repos = sorted_repos[753:953]    # Get only the 200 after the first 770
+                selected_repos = sorted_repos[953:1153]    # Get only the 200 after the first 953
                 cloners[vcs].clone_repositories(selected_repos)
             else:
                 logging.warning("[Cloner]: Cannot clone repositories of type " + vcs + ": No cloner found for this type...")
