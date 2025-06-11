@@ -1,0 +1,1174 @@
+[
+    {
+        "url": "https://github.com/mattiadutto/ugv_gazebo_sim.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1745490133,
+        "packages": [
+            {
+                "dependencies": [
+                    "joint_state_publisher",
+                    "joint_state_publisher_gui",
+                    "robot_state_publisher",
+                    "rviz2",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "rclcpp",
+                    "sensor_msgs",
+                    "tf2",
+                    "twist_mux",
+                    "xacro",
+                    "ros_gz_bridge",
+                    "ros_gz_sim"
+                ],
+                "name": "bunker_gazebo_sim"
+            },
+            {
+                "dependencies": [
+                    "xacro"
+                ],
+                "name": "bunker_description"
+            },
+            {
+                "dependencies": [
+                    "xacro"
+                ],
+                "name": "scout_description"
+            },
+            {
+                "dependencies": [
+                    "joint_state_publisher",
+                    "joint_state_publisher_gui",
+                    "robot_state_publisher",
+                    "rviz2",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "rclcpp",
+                    "sensor_msgs",
+                    "tf2",
+                    "twist_mux",
+                    "xacro",
+                    "ros_gz_bridge",
+                    "ros_gz_image",
+                    "ros_gz_sim",
+                    "image_transport_plugins"
+                ],
+                "name": "scout_gazebo_sim"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mdrwiega/depth_nav_tools.git",
+        "contributors": 6,
+        "branch_count": 8,
+        "last_update": 1735164512,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "sensor_msgs",
+                    "image_geometry",
+                    "image_transport",
+                    "cv_bridge",
+                    "geometry_msgs"
+                ],
+                "name": "cliff_detector"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_msgs",
+                    "sensor_msgs",
+                    "image_geometry",
+                    "image_transport",
+                    "pcl_ros"
+                ],
+                "name": "depth_sensor_pose"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_components",
+                    "sensor_msgs",
+                    "cv_bridge",
+                    "image_geometry",
+                    "image_transport"
+                ],
+                "name": "laserscan_kinect"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "nav2_costmap_2d",
+                    "geometry_msgs",
+                    "tf2_ros"
+                ],
+                "name": "nav_layer_from_points"
+            }
+        ],
+        "cpplint_errors": 176,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mikeferguson/graceful_controller.git",
+        "contributors": 2,
+        "branch_count": 6,
+        "last_update": 1729582069,
+        "packages": [
+            {
+                "dependencies": [
+                    "angles"
+                ],
+                "name": "graceful_controller"
+            },
+            {
+                "dependencies": [
+                    "angles",
+                    "geometry_msgs",
+                    "graceful_controller",
+                    "nav_2d_utils",
+                    "nav_msgs",
+                    "nav2_core",
+                    "nav2_costmap_2d",
+                    "nav2_util",
+                    "pluginlib",
+                    "rclcpp",
+                    "std_msgs",
+                    "tf2_geometry_msgs",
+                    "tf2_ros",
+                    "visualization_msgs"
+                ],
+                "name": "graceful_controller_ros"
+            }
+        ],
+        "cpplint_errors": 161,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/ladianchad/nav2_config_helper.git",
+        "contributors": 3,
+        "branch_count": 4,
+        "last_update": 1691993531,
+        "packages": [
+            {
+                "dependencies": [
+                    "angles",
+                    "rclcpp",
+                    "rclcpp_lifecycle",
+                    "rclcpp_action",
+                    "rclcpp_components",
+                    "std_msgs",
+                    "nav2_msgs",
+                    "nav_2d_utils",
+                    "nav_2d_msgs",
+                    "nav2_util",
+                    "nav2_core",
+                    "pluginlib",
+                    "interactive_markers",
+                    "visualization_msgs"
+                ],
+                "name": "nav2_config_helper"
+            },
+            {
+                "dependencies": [
+                    "angles",
+                    "rclcpp",
+                    "rclcpp_lifecycle",
+                    "rclcpp_action",
+                    "rclcpp_components",
+                    "std_msgs",
+                    "nav2_msgs",
+                    "nav_2d_utils",
+                    "nav_2d_msgs",
+                    "nav2_util",
+                    "nav2_core",
+                    "pluginlib",
+                    "interactive_markers",
+                    "visualization_msgs"
+                ],
+                "name": "nav2_config_helper_rviz_plugin"
+            }
+        ],
+        "cpplint_errors": 186,
+        "readme": false,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mgonzs13/tiago_nav2.git",
+        "contributors": 2,
+        "branch_count": 5,
+        "last_update": 1670258234,
+        "packages": [
+            {
+                "dependencies": [
+                    "launch_pal",
+                    "tiago_nav2",
+                    "rviz2",
+                    "gazebo",
+                    "gazebo_ros"
+                ],
+                "name": "tiago_granny"
+            },
+            {
+                "dependencies": [
+                    "navigation2",
+                    "nav2_bringup",
+                    "dwb_core",
+                    "slam_toolbox"
+                ],
+                "name": "tiago_nav2"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/linorobot/linorobot2.git",
+        "contributors": 11,
+        "branch_count": 16,
+        "last_update": 1749373150,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "linorobot2_navigation"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "linorobot2"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "linorobot2_bringup"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "linorobot2_description"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake",
+                    "ament_cmake_python"
+                ],
+                "name": "linorobot2_gazebo"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "linorobot2_base"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mmcza/Motion-Planning-Methods-and-Algorithms_laboratory.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1717626894,
+        "packages": [
+            {
+                "dependencies": [
+                    "nav_msgs",
+                    "rclpy",
+                    "std_msgs",
+                    "nav2_map_server",
+                    "nav2_lifecycle_manager"
+                ],
+                "name": "mapr_6_student"
+            },
+            {
+                "dependencies": [
+                    "nav_msgs",
+                    "rclpy",
+                    "std_msgs",
+                    "nav2_map_server",
+                    "nav2_lifecycle_manager"
+                ],
+                "name": "rrt_star"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "ompl",
+                    "nav_msgs",
+                    "geometry_msgs",
+                    "eigen"
+                ],
+                "name": "ompl_example_2d"
+            },
+            {
+                "dependencies": [
+                    "nav_msgs",
+                    "rclpy",
+                    "std_msgs",
+                    "nav2_map_server",
+                    "nav2_lifecycle_manager",
+                    "math"
+                ],
+                "name": "mapr_5_student"
+            },
+            {
+                "dependencies": [
+                    "nav_msgs",
+                    "rclpy",
+                    "std_msgs",
+                    "nav2_map_server",
+                    "nav2_lifecycle_manager"
+                ],
+                "name": "mapr_4_student"
+            }
+        ],
+        "cpplint_errors": 55,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mgonzs13/ros2_rover.git",
+        "contributors": 1,
+        "branch_count": 9,
+        "last_update": 1744312113,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "rover_teleop"
+            },
+            {
+                "dependencies": [
+                    "rover_motor_controller_cpp",
+                    "joy_linux",
+                    "teleop_twist_joy",
+                    "urg_node"
+                ],
+                "name": "rover_bringup"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclpy",
+                    "tf2_ros",
+                    "tf_transformations",
+                    "geometry_msgs",
+                    "nav2_msgs",
+                    "nav2_bringup",
+                    "navigation2",
+                    "nav2_smac_planner",
+                    "nav2_regulated_pure_pursuit_controller"
+                ],
+                "name": "rover_navigation"
+            },
+            {
+                "dependencies": [
+                    "xacro"
+                ],
+                "name": "rover_description"
+            },
+            {
+                "dependencies": [
+                    "rover_msgs",
+                    "geometry_msgs"
+                ],
+                "name": "rover_motor_controller_cpp"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "rover_msgs"
+            },
+            {
+                "dependencies": [
+                    "rtabmap",
+                    "rtabmap_ros",
+                    "robot_localization"
+                ],
+                "name": "rover_localization"
+            },
+            {
+                "dependencies": [
+                    "gazebo",
+                    "gazebo_ros2_control",
+                    "gazebo_ros_pkgs",
+                    "gazebo_plugins",
+                    "joint_state_broadcaster",
+                    "robot_state_publisher",
+                    "position_controllers",
+                    "velocity_controllers",
+                    "controller_manager",
+                    "rviz2",
+                    "rover_description",
+                    "rover_msgs",
+                    "rover_motor_controller_cpp",
+                    "std_msgs",
+                    "trajectory_msgs"
+                ],
+                "name": "rover_gazebo"
+            },
+            {
+                "dependencies": [
+                    "rover_msgs",
+                    "geometry_msgs"
+                ],
+                "name": "rover_motor_controller"
+            }
+        ],
+        "cpplint_errors": 92,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/namberino/adamo.git",
+        "contributors": 3,
+        "branch_count": 3,
+        "last_update": 1719155133,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "adamo"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mmcza/CrazyFlie-With-Depth-Estimation-Model.git",
+        "contributors": 4,
+        "branch_count": 3,
+        "last_update": 1737316858,
+        "packages": [
+            {
+                "dependencies": [
+                    "ros_gz",
+                    "sdformat_urdf",
+                    "joint_state_publisher_gui",
+                    "ros_gz_crazyflie_gazebo"
+                ],
+                "name": "ros_gz_crazyflie_bringup"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "ros_gz_crazyflie_gazebo"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "sensor_msgs",
+                    "tf2_ros",
+                    "random",
+                    "math",
+                    "tf_transformations",
+                    "geometry_msgs",
+                    "numpy",
+                    "cv_bridge",
+                    "cv2"
+                ],
+                "name": "crazyflie_data_collector"
+            },
+            {
+                "dependencies": [
+                    "ros_gz_crazyflie_bringup"
+                ],
+                "name": "crazyflie_ros2_multiranger_bringup"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "sensor_msgs",
+                    "cv_bridge",
+                    "opencv",
+                    "torch",
+                    "onnx",
+                    "onnx2torch",
+                    "numpy",
+                    "albumentations"
+                ],
+                "name": "depth_estimation"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "tf2_ros",
+                    "std_srvs",
+                    "sensor_msgs",
+                    "crazyflie_interfaces",
+                    "geometry_msgs",
+                    "motion_capture_tracking_interfaces"
+                ],
+                "name": "crazyflie"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "crazyflie_interfaces"
+                ],
+                "name": "crazyflie_py"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "crazyflie_interfaces"
+                ],
+                "name": "crazyflie_sim"
+            },
+            {
+                "dependencies": [
+                    "builtin_interfaces",
+                    "rosidl_default_generators"
+                ],
+                "name": "crazyflie_interfaces"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "crazyflie_py"
+                ],
+                "name": "crazyflie_examples"
+            }
+        ],
+        "cpplint_errors": 5979,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": true,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/lawl2/mob-robot-for-sensible-material-transport.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1696002397,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "mobile_rob"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/lorenzo-severini/ros2-treasure-navigation.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1739790903,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclpy",
+                    "ros2_navigation_interfaces",
+                    "nav2_simple_commander",
+                    "launch",
+                    "launch_ros"
+                ],
+                "name": "ros2_navigation_control"
+            },
+            {
+                "dependencies": [
+                    "builtin_interfaces",
+                    "std_msgs"
+                ],
+                "name": "ros2_navigation_interfaces"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/makerspet/makerspet_snoopy.git",
+        "contributors": 4,
+        "branch_count": 4,
+        "last_update": 1736070165,
+        "packages": [
+            {
+                "dependencies": [
+                    "urdf"
+                ],
+                "name": "makerspet_snoopy"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/makerspet/makerspet_loki.git",
+        "contributors": 3,
+        "branch_count": 4,
+        "last_update": 1736069887,
+        "packages": [
+            {
+                "dependencies": [
+                    "urdf"
+                ],
+                "name": "makerspet_loki"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/manojm-dev/ROS-Assignment.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1735562295,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "butlerbot_localization"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators",
+                    "builtin_interfaces"
+                ],
+                "name": "butlerbot_interfaces"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "butlerbot_gazebo"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "butlerbot_description"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "butlerbot_rmf"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "nav2_msgs",
+                    "geometry_msgs",
+                    "builtin_interfaces",
+                    "butlerbot_interfaces",
+                    "tf_transformations",
+                    "robot_navigator"
+                ],
+                "name": "butlerbot_task"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "butlerbot_rmf_fleet_adapter"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "butlerbot_navigation"
+            },
+            {
+                "dependencies": [
+                    "rmf_building_map_tools",
+                    "rmf_visualization_schedule"
+                ],
+                "name": "butlerbot_rmf_gazebo"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mikeferguson/ubr_reloaded.git",
+        "contributors": 4,
+        "branch_count": 6,
+        "last_update": 1734282384,
+        "packages": [
+            {
+                "dependencies": [
+                    "builtin_interfaces",
+                    "rosidl_default_generators",
+                    "std_msgs"
+                ],
+                "name": "ubr_msgs"
+            },
+            {
+                "dependencies": [
+                    "image_transport",
+                    "nav2_costmap_2d",
+                    "pluginlib",
+                    "sensor_msgs",
+                    "tf2_ros"
+                ],
+                "name": "ubr1_navigation"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "ubr1_description"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "ubr1_moveit"
+            },
+            {
+                "dependencies": [
+                    "grasping_msgs",
+                    "moveit_task_constructor_core",
+                    "rclcpp",
+                    "simple_actions"
+                ],
+                "name": "ubr1_demo"
+            },
+            {
+                "dependencies": [
+                    "control_msgs",
+                    "geometry_msgs",
+                    "rclcpp",
+                    "rclcpp_action",
+                    "sensor_msgs"
+                ],
+                "name": "ubr_teleop"
+            },
+            {
+                "dependencies": [
+                    "control_toolbox",
+                    "gazebo_ros",
+                    "robot_controllers",
+                    "robot_controllers_interface"
+                ],
+                "name": "ubr1_gazebo"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "ubr1_bringup"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "ubr1_calibration"
+            }
+        ],
+        "cpplint_errors": 224,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": true,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/marcos-moura97/web_server_launcher.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1690390507,
+        "packages": [
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "nav2_msgs",
+                    "rclpy",
+                    "actionlib_msgs"
+                ],
+                "name": "web_server_launcher"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mwlock/webots_ros2_jetbot.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1676153418,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "webots_ros2_jetbot"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mrpt-ros-pkg/mrpt_navigation.git",
+        "contributors": 30,
+        "branch_count": 4,
+        "last_update": 1748421696,
+        "packages": [
+            {
+                "dependencies": [
+                    "mrpt_pointcloud_pipeline",
+                    "mrpt_pf_localization",
+                    "mrpt_map_server",
+                    "mrpt_rawlog",
+                    "mrpt_reactivenav2d",
+                    "mrpt_tutorials",
+                    "mrpt_nav_interfaces",
+                    "ament_cmake_lint_cmake",
+                    "ament_cmake_xmllint",
+                    "ament_lint_auto"
+                ],
+                "name": "mrpt_navigation"
+            },
+            {
+                "dependencies": [
+                    "cv_bridge",
+                    "mrpt_libros_bridge",
+                    "mrpt_libtclap",
+                    "mrpt_msgs",
+                    "nav_msgs",
+                    "rosbag2_cpp",
+                    "sensor_msgs",
+                    "tf2_geometry_msgs",
+                    "tf2_msgs",
+                    "tf2_ros",
+                    "ament_cmake_lint_cmake",
+                    "ament_cmake_xmllint",
+                    "ament_lint_auto"
+                ],
+                "name": "mrpt_rawlog"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake_lint_cmake",
+                    "ament_cmake_xmllint",
+                    "ament_lint_auto"
+                ],
+                "name": "mrpt_tutorials"
+            },
+            {
+                "dependencies": [
+                    "action_msgs",
+                    "geometry_msgs",
+                    "mrpt_msgs",
+                    "nav_msgs"
+                ],
+                "name": "mrpt_nav_interfaces"
+            },
+            {
+                "dependencies": [
+                    "mrpt_libgui",
+                    "mrpt_libmaps",
+                    "mrpt_libnav",
+                    "mrpt_libros_bridge",
+                    "mrpt_msgs",
+                    "mrpt_nav_interfaces",
+                    "mrpt_path_planning",
+                    "nav_msgs",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "sensor_msgs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "tf2_ros",
+                    "visualization_msgs",
+                    "ament_cmake_lint_cmake",
+                    "ament_cmake_xmllint",
+                    "ament_lint_auto"
+                ],
+                "name": "mrpt_tps_astar_planner"
+            },
+            {
+                "dependencies": [
+                    "mp2p_icp",
+                    "mrpt_libgui",
+                    "mrpt_libmaps",
+                    "mrpt_libobs",
+                    "mrpt_libros_bridge",
+                    "nav_msgs",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "sensor_msgs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "ament_cmake_lint_cmake",
+                    "ament_cmake_xmllint",
+                    "ament_lint_auto"
+                ],
+                "name": "mrpt_pointcloud_pipeline"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "mrpt_libnav",
+                    "mrpt_libros_bridge",
+                    "mrpt_nav_interfaces",
+                    "nav_msgs",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "sensor_msgs",
+                    "std_msgs",
+                    "stereo_msgs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "tf2_ros",
+                    "visualization_msgs",
+                    "ament_cmake_lint_cmake",
+                    "ament_cmake_xmllint",
+                    "ament_lint_auto"
+                ],
+                "name": "mrpt_reactivenav2d"
+            },
+            {
+                "dependencies": [
+                    "roscpp",
+                    "rclcpp",
+                    "mola_relocalization",
+                    "mp2p_icp",
+                    "mrpt_libgui",
+                    "mrpt_libros_bridge",
+                    "mrpt_libslam",
+                    "mrpt_msgs",
+                    "mrpt_msgs_bridge",
+                    "nav_msgs",
+                    "pose_cov_ops",
+                    "sensor_msgs",
+                    "std_msgs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "ament_cmake_lint_cmake",
+                    "ament_cmake_xmllint",
+                    "ament_lint_auto"
+                ],
+                "name": "mrpt_pf_localization"
+            },
+            {
+                "dependencies": [
+                    "ros_environment"
+                ],
+                "name": "mrpt_msgs_bridge"
+            },
+            {
+                "dependencies": [
+                    "mp2p_icp",
+                    "mrpt_libobs",
+                    "mrpt_libmaps",
+                    "mrpt_libros_bridge",
+                    "mrpt_msgs",
+                    "mrpt_nav_interfaces",
+                    "rclcpp_components",
+                    "tf2",
+                    "tf2_ros",
+                    "tf2_geometry_msgs",
+                    "ament_cmake_lint_cmake",
+                    "ament_cmake_xmllint",
+                    "ament_lint_auto"
+                ],
+                "name": "mrpt_map_server"
+            }
+        ],
+        "cpplint_errors": 575,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/mmcza/TurtleBot-RRT-Star.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1733776392,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_action",
+                    "rclcpp_lifecycle",
+                    "std_msgs",
+                    "visualization_msgs",
+                    "nav2_util",
+                    "nav2_msgs",
+                    "nav_msgs",
+                    "geometry_msgs",
+                    "builtin_interfaces",
+                    "tf2_ros",
+                    "nav2_costmap_2d",
+                    "nav2_core",
+                    "pluginlib",
+                    "random",
+                    "vector",
+                    "limits"
+                ],
+                "name": "nav2_rrtstar_planner"
+            }
+        ],
+        "cpplint_errors": 54,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    }
+]
