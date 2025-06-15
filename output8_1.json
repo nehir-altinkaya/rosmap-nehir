@@ -1,0 +1,529 @@
+[
+    {
+        "url": "https://github.com/uhobeike/ike_nav.git",
+        "contributors": 1,
+        "branch_count": 5,
+        "last_update": 1702966100,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_action",
+                    "rclcpp_components",
+                    "geometry_msgs",
+                    "ike_nav_msgs",
+                    "nav2_util",
+                    "std_srvs",
+                    "tf2_geometry_msgs",
+                    "tf2_ros",
+                    "yaml-cpp",
+                    "ike_nav_parameters"
+                ],
+                "name": "ike_waypoint_follower"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_components",
+                    "geometry_msgs",
+                    "ike_map_server",
+                    "ike_nav_msgs",
+                    "nav_msgs",
+                    "ike_nav_parameters"
+                ],
+                "name": "ike_planner"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_components",
+                    "nav2_util",
+                    "ike_nav_msgs",
+                    "geometry_msgs",
+                    "ike_nav_parameters"
+                ],
+                "name": "ike_controller"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_components",
+                    "ike_nav_msgs",
+                    "nav_msgs",
+                    "std_srvs",
+                    "yaml-cpp",
+                    "ike_nav_parameters"
+                ],
+                "name": "ike_map_server"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake_auto"
+                ],
+                "name": "ike_nav"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rosidl_default_generators",
+                    "geometry_msgs",
+                    "nav_msgs"
+                ],
+                "name": "ike_nav_msgs"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake_auto"
+                ],
+                "name": "ike_launch"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_action",
+                    "rclcpp_components",
+                    "ike_controller",
+                    "ike_localization",
+                    "ike_map_server",
+                    "ike_nav_msgs",
+                    "ike_planner",
+                    "geometry_msgs",
+                    "nav2_util",
+                    "ike_nav_parameters"
+                ],
+                "name": "ike_nav_server"
+            },
+            {
+                "dependencies": [
+                    "generate_parameter_library",
+                    "parameter_traits",
+                    "rclcpp_lifecycle"
+                ],
+                "name": "ike_nav_parameters"
+            },
+            {
+                "dependencies": [
+                    "qtbase5-dev"
+                ],
+                "name": "ike_nav_rviz_plugins"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_components",
+                    "ike_map_server",
+                    "ike_nav_msgs",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "nav2_msgs",
+                    "nav2_util",
+                    "sensor_msgs",
+                    "std_srvs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "tf2_ros",
+                    "visualization_msgs",
+                    "ike_nav_parameters"
+                ],
+                "name": "ike_localization"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_components",
+                    "geometry_msgs",
+                    "ike_map_server",
+                    "ike_nav_msgs",
+                    "sensor_msgs",
+                    "std_srvs",
+                    "tf2_ros",
+                    "nav_msgs",
+                    "nav2_util",
+                    "ike_nav_parameters"
+                ],
+                "name": "ike_costmap_2d"
+            }
+        ],
+        "cpplint_errors": 637,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/taherfattahi/ros2-slam-auto-navigation.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1738687841,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "ros2_slam_auto_navigation"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/thulioguilherme/palletron_bringup.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1730321646,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "palletron_bringup"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/vinci-xiao/PUI.git",
+        "contributors": 2,
+        "branch_count": 7,
+        "last_update": 1657889530,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "pui_navigation2"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "pui_teleop"
+            },
+            {
+                "dependencies": [
+                    "urdf"
+                ],
+                "name": "pui_description"
+            },
+            {
+                "dependencies": [
+                    "dynamixel_sdk",
+                    "geometry_msgs",
+                    "message_filters",
+                    "nav_msgs",
+                    "rclcpp",
+                    "rcutils",
+                    "sensor_msgs",
+                    "std_msgs",
+                    "std_srvs",
+                    "tf2",
+                    "tf2_ros"
+                ],
+                "name": "pui_node"
+            },
+            {
+                "dependencies": [
+                    "nav2_common",
+                    "navigation2",
+                    "launch_ros"
+                ],
+                "name": "pui_bringup"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_msgs",
+                    "geometry_msgs",
+                    "evpi_interfaces",
+                    "tf2",
+                    "tf2_ros"
+                ],
+                "name": "pui_uwb"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "visualization_msgs",
+                    "geometry_msgs",
+                    "std_msgs",
+                    "nav_msgs",
+                    "tf2_msgs",
+                    "tf2_ros"
+                ],
+                "name": "pui_markers"
+            }
+        ],
+        "cpplint_errors": 411,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/rt-net/raspimouse_ros2_examples.git",
+        "contributors": 6,
+        "branch_count": 10,
+        "last_update": 1732517521,
+        "packages": [
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "joy_linux",
+                    "libopencv-dev",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "rclcpp_lifecycle",
+                    "raspimouse",
+                    "raspimouse_msgs",
+                    "rt_usb_9axisimu_driver",
+                    "sensor_msgs",
+                    "std_msgs",
+                    "std_srvs",
+                    "v4l-utils",
+                    "hls_lfcd_lds_driver",
+                    "nav2_map_server",
+                    "slam_toolbox",
+                    "cv_bridge",
+                    "usb_cam"
+                ],
+                "name": "raspimouse_ros2_examples"
+            }
+        ],
+        "cpplint_errors": 144,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": true,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/sciotaio/robotics-ui.git",
+        "contributors": 1,
+        "branch_count": 6,
+        "last_update": 1725974179,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "ros2_webinterface"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/uleroboticsgroup/yasmin.git",
+        "contributors": 18,
+        "branch_count": 4,
+        "last_update": 1749803215,
+        "packages": [
+            {
+                "dependencies": [
+                    "ros_environment"
+                ],
+                "name": "yasmin_ros"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "yasmin_msgs"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "rclcpp",
+                    "yasmin",
+                    "yasmin_ros",
+                    "yasmin_msgs"
+                ],
+                "name": "yasmin_viewer"
+            },
+            {
+                "dependencies": [
+                    "ros_environment"
+                ],
+                "name": "yasmin_demos"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake",
+                    "ament_cmake_python"
+                ],
+                "name": "yasmin"
+            }
+        ],
+        "cpplint_errors": 282,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/shounaknaik/nav2_waypoint_following_bot_lidar.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1725549885,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "basic_mobile_robot"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/rplayground/sandbox.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1684960953,
+        "packages": [],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/rt-net/raspimouse_slam_navigation_ros2.git",
+        "contributors": 4,
+        "branch_count": 9,
+        "last_update": 1748839080,
+        "packages": [
+            {
+                "dependencies": [
+                    "hls_lfcd_lds_driver",
+                    "joint_state_publisher",
+                    "joy_linux",
+                    "nav2_map_server",
+                    "raspimouse",
+                    "raspimouse_description",
+                    "raspimouse_ros2_examples",
+                    "robot_state_publisher",
+                    "rplidar_ros",
+                    "rviz2",
+                    "slam_toolbox",
+                    "urg_node",
+                    "xacro"
+                ],
+                "name": "raspimouse_slam"
+            },
+            {
+                "dependencies": [
+                    "hls_lfcd_lds_driver",
+                    "nav2_bringup",
+                    "raspimouse",
+                    "raspimouse_slam",
+                    "rplidar_ros",
+                    "rviz2",
+                    "urg_node"
+                ],
+                "name": "raspimouse_navigation"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "raspimouse_slam_navigation"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": true,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/taherfattahi/isaac-sim-mobile-robot-rtab-map.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1738500610,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "isaac-sim-mobile-robot-rtab-map"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    }
+]
