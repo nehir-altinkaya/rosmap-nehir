@@ -1,0 +1,1998 @@
+[
+    {
+        "url": "https://github.com/rbcuenca/ros2turtlebot3.git",
+        "contributors": 3,
+        "branch_count": 3,
+        "last_update": 1712339158,
+        "packages": [
+            {
+                "dependencies": [
+                    "urdf",
+                    "xacro",
+                    "urdf",
+                    "xacro"
+                ],
+                "name": "urdfbot_description"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "turtlebot3_manipulation_navigation2"
+            },
+            {
+                "dependencies": [
+                    "dynamixel_sdk",
+                    "hardware_interface",
+                    "pluginlib",
+                    "rclcpp"
+                ],
+                "name": "turtlebot3_manipulation_hardware"
+            },
+            {
+                "dependencies": [
+                    "gazebo_ros_pkgs",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "rclcpp",
+                    "sensor_msgs",
+                    "tf2"
+                ],
+                "name": "turtlebot3_gazebo"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "rclcpp",
+                    "sensor_msgs",
+                    "tf2",
+                    "tf2_msgs",
+                    "turtlebot3_msgs"
+                ],
+                "name": "turtlebot3_fake_node"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "turtlebot3_manipulation_cartographer"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "turtlebot3_simulations"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "turtlebot3_manipulation_bringup"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "turtlebot3_manipulation_description"
+            },
+            {
+                "dependencies": [
+                    "gazebo_ros_pkgs",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "rclcpp",
+                    "sensor_msgs",
+                    "tf2",
+                    "gazebo_ros_pkgs",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "rclcpp",
+                    "sensor_msgs",
+                    "tf2"
+                ],
+                "name": "my_simulation"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "turtlebot3_manipulation_bringup",
+                    "turtlebot3_manipulation_moveit_config",
+                    "turtlebot3_manipulation_description",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "control_msgs",
+                    "sensor_msgs"
+                ],
+                "name": "turtlebot3_manipulation_teleop"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "turtlebot3_manipulation_moveit_config"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "turtlebot3_manipulation"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "gazebo_ros",
+                    "my_box_bot_description"
+                ],
+                "name": "my_box_bot_gazebo"
+            },
+            {
+                "dependencies": [
+                    "urdf",
+                    "xacro"
+                ],
+                "name": "my_box_bot_description"
+            }
+        ],
+        "cpplint_errors": 469,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/robosoft-ai/SMACC2.git",
+        "contributors": 11,
+        "branch_count": 14,
+        "last_update": 1749662282,
+        "packages": [
+            {
+                "dependencies": [
+                    "smacc2"
+                ],
+                "name": "ros_timer_client"
+            },
+            {
+                "dependencies": [
+                    "smacc2"
+                ],
+                "name": "http_client"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "slam_toolbox",
+                    "angles",
+                    "yaml_cpp_vendor",
+                    "nav2_msgs",
+                    "pluginlib",
+                    "rclcpp_action",
+                    "nav2_util",
+                    "std_msgs",
+                    "std_srvs",
+                    "tf2_ros",
+                    "tf2_geometry_msgs",
+                    "bond",
+                    "ament_index_cpp"
+                ],
+                "name": "nav2z_client"
+            },
+            {
+                "dependencies": [
+                    "angles",
+                    "geometry_msgs",
+                    "nav2_core",
+                    "nav_msgs",
+                    "tf2",
+                    "nav2_costmap_2d",
+                    "forward_global_planner",
+                    "visualization_msgs",
+                    "nav_2d_utils"
+                ],
+                "name": "backward_global_planner"
+            },
+            {
+                "dependencies": [
+                    "nav2_costmap_2d",
+                    "geometry_msgs",
+                    "nav2z_planners_common",
+                    "nav2_core",
+                    "nav_msgs",
+                    "nav_2d_utils",
+                    "std_msgs",
+                    "tf2"
+                ],
+                "name": "backward_local_planner"
+            },
+            {
+                "dependencies": [
+                    "pluginlib"
+                ],
+                "name": "forward_global_planner"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "nav_2d_utils",
+                    "nav_msgs",
+                    "nav2_core",
+                    "nav2_costmap_2d",
+                    "rclcpp",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "visualization_msgs",
+                    "nav2z_planners_common"
+                ],
+                "name": "undo_path_global_planner"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "nav2z_planners_common",
+                    "nav_2d_utils",
+                    "nav_msgs",
+                    "nav2_core",
+                    "nav2_costmap_2d",
+                    "std_msgs",
+                    "tf2"
+                ],
+                "name": "forward_local_planner"
+            },
+            {
+                "dependencies": [
+                    "angles",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "rclcpp",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "rclcpp_lifecycle"
+                ],
+                "name": "nav2z_planners_common"
+            },
+            {
+                "dependencies": [
+                    "pluginlib"
+                ],
+                "name": "pure_spinning_local_planner"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "rclcpp",
+                    "rclcpp_lifecycle"
+                ],
+                "name": "lifecyclenode_client"
+            },
+            {
+                "dependencies": [
+                    "smacc2"
+                ],
+                "name": "ros_publisher_client"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "smacc2_msgs"
+                ],
+                "name": "multirole_sensor_client"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "tf2",
+                    "tf2_ros",
+                    "moveit_ros_planning_interface",
+                    "yaml_cpp_vendor",
+                    "ament_index_cpp",
+                    "yaml-cpp",
+                    "tf2_geometry_msgs"
+                ],
+                "name": "moveit2z_client"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "std_msgs"
+                ],
+                "name": "keyboard_client"
+            },
+            {
+                "dependencies": [
+                    "smacc2"
+                ],
+                "name": "eg_conditional_generator"
+            },
+            {
+                "dependencies": [
+                    "smacc2"
+                ],
+                "name": "eg_random_generator"
+            },
+            {
+                "dependencies": [
+                    "builtin_interfaces"
+                ],
+                "name": "smacc2_msgs"
+            },
+            {
+                "dependencies": [
+                    "libboost-thread-dev"
+                ],
+                "name": "smacc2"
+            },
+            {
+                "dependencies": [
+                    "smacc2"
+                ],
+                "name": "sr_event_countdown"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "smacc2_msgs"
+                ],
+                "name": "sr_all_events_go"
+            },
+            {
+                "dependencies": [
+                    "smacc2"
+                ],
+                "name": "sr_conditional"
+            },
+            {
+                "dependencies": [
+                    "ros_timer_client",
+                    "smacc2"
+                ],
+                "name": "sm_atomic_subscribers_performance_test"
+            },
+            {
+                "dependencies": [
+                    "smacc2"
+                ],
+                "name": "sm_coretest_transition_speed_1"
+            },
+            {
+                "dependencies": [
+                    "ros_timer_client",
+                    "smacc2"
+                ],
+                "name": "sm_atomic_performance_trace_1"
+            },
+            {
+                "dependencies": [
+                    "ros_timer_client",
+                    "smacc2"
+                ],
+                "name": "sm_atomic"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake_auto",
+                    "ros_timer_client",
+                    "lifecyclenode_client",
+                    "smacc2",
+                    "std_msgs"
+                ],
+                "name": "sm_atomic_lifecycle"
+            },
+            {
+                "dependencies": [
+                    "ros_timer_client",
+                    "smacc2"
+                ],
+                "name": "sm_branching"
+            },
+            {
+                "dependencies": [
+                    "ros_timer_client",
+                    "smacc2",
+                    "std_srvs"
+                ],
+                "name": "sm_atomic_services"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "rclcpp",
+                    "multirole_sensor_client",
+                    "sr_all_events_go",
+                    "std_msgs",
+                    "ros_timer_client",
+                    "ros_publisher_client",
+                    "keyboard_client",
+                    "xterm"
+                ],
+                "name": "sm_pack_ml"
+            },
+            {
+                "dependencies": [
+                    "ros_timer_client",
+                    "smacc2"
+                ],
+                "name": "sm_atomic_24hr"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "rclcpp",
+                    "multirole_sensor_client",
+                    "sr_all_events_go",
+                    "std_msgs",
+                    "ros_timer_client",
+                    "ros_publisher_client",
+                    "keyboard_client",
+                    "xterm"
+                ],
+                "name": "sm_advanced_recovery_1"
+            },
+            {
+                "dependencies": [
+                    "eg_conditional_generator",
+                    "keyboard_client",
+                    "smacc2",
+                    "std_msgs"
+                ],
+                "name": "sm_pubsub_1"
+            },
+            {
+                "dependencies": [
+                    "keyboard_client",
+                    "multirole_sensor_client",
+                    "ros_publisher_client",
+                    "ros_timer_client",
+                    "smacc2",
+                    "sr_all_events_go",
+                    "std_msgs",
+                    "rclcpp"
+                ],
+                "name": "sm_three_some"
+            },
+            {
+                "dependencies": [
+                    "libboost-thread-dev",
+                    "ros_timer_client",
+                    "smacc2",
+                    "moveit2z_client",
+                    "controller_manager",
+                    "moveit_resources_panda_moveit_config",
+                    "robot_state_publisher",
+                    "moveit_visual_tools",
+                    "moveit_planners_chomp",
+                    "pilz_industrial_motion_planner",
+                    "joint_state_broadcaster",
+                    "moveit_simple_controller_manager",
+                    "moveit_planners_ompl",
+                    "moveit_plugins",
+                    "moveit_ros_robot_interaction",
+                    "moveit",
+                    "keyboard_client",
+                    "rclcpp",
+                    "ros_publisher_client"
+                ],
+                "name": "sm_panda_moveit2z_cb_inventory"
+            },
+            {
+                "dependencies": [
+                    "smacc2",
+                    "rclcpp",
+                    "multirole_sensor_client",
+                    "sr_all_events_go",
+                    "std_msgs",
+                    "ros_timer_client",
+                    "ros_publisher_client",
+                    "keyboard_client",
+                    "xterm"
+                ],
+                "name": "sm_multi_stage_1"
+            },
+            {
+                "dependencies": [
+                    "ros_timer_client",
+                    "smacc2"
+                ],
+                "name": "sm_atomic_mode_states"
+            },
+            {
+                "dependencies": [
+                    "libboost-thread-dev",
+                    "action_tutorials_interfaces",
+                    "smacc2",
+                    "std_msgs"
+                ],
+                "name": "sm_simple_action_client"
+            },
+            {
+                "dependencies": [
+                    "ros_timer_client",
+                    "http_client",
+                    "smacc2"
+                ],
+                "name": "sm_atomic_http"
+            }
+        ],
+        "cpplint_errors": 6948,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/ros-industrial/ros2_canopen.git",
+        "contributors": 32,
+        "branch_count": 19,
+        "last_update": 1747064022,
+        "packages": [
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "canopen_interfaces"
+            },
+            {
+                "dependencies": [
+                    "lely_core_libraries",
+                    "lifecycle_msgs",
+                    "rclcpp",
+                    "rclcpp_lifecycle"
+                ],
+                "name": "canopen_fake_slaves"
+            },
+            {
+                "dependencies": [
+                    "canopen_402_driver",
+                    "canopen_interfaces",
+                    "canopen_proxy_driver",
+                    "controller_interface",
+                    "controller_manager",
+                    "hardware_interface",
+                    "pluginlib",
+                    "rclcpp",
+                    "rclcpp_lifecycle",
+                    "realtime_tools",
+                    "std_msgs",
+                    "std_srvs"
+                ],
+                "name": "canopen_ros2_controllers"
+            },
+            {
+                "dependencies": [
+                    "canopen_402_driver",
+                    "canopen_core",
+                    "canopen_proxy_driver",
+                    "hardware_interface",
+                    "pluginlib",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "rclcpp_lifecycle"
+                ],
+                "name": "canopen_ros2_control"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "canopen_interfaces",
+                    "lifecycle_msgs",
+                    "std_msgs"
+                ],
+                "name": "canopen_utils"
+            },
+            {
+                "dependencies": [
+                    "canopen_interfaces",
+                    "lely_core_libraries",
+                    "lifecycle_msgs",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "rclcpp_lifecycle",
+                    "yaml_cpp_vendor",
+                    "boost"
+                ],
+                "name": "canopen_core"
+            },
+            {
+                "dependencies": [
+                    "boost",
+                    "canopen_base_driver",
+                    "canopen_core",
+                    "canopen_interfaces",
+                    "canopen_proxy_driver",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "rclcpp_lifecycle",
+                    "sensor_msgs",
+                    "std_srvs"
+                ],
+                "name": "canopen_402_driver"
+            },
+            {
+                "dependencies": [
+                    "lely_core_libraries"
+                ],
+                "name": "canopen_tests"
+            },
+            {
+                "dependencies": [
+                    "canopen_core",
+                    "canopen_interfaces",
+                    "lely_core_libraries",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "rclcpp_lifecycle"
+                ],
+                "name": "canopen_master_driver"
+            },
+            {
+                "dependencies": [
+                    "git",
+                    "autoconf",
+                    "automake",
+                    "libtool"
+                ],
+                "name": "lely_core_libraries"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "canopen"
+            },
+            {
+                "dependencies": [
+                    "canopen_core",
+                    "canopen_interfaces",
+                    "lely_core_libraries",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "rclcpp_lifecycle",
+                    "std_msgs",
+                    "std_srvs",
+                    "boost",
+                    "diagnostic_updater"
+                ],
+                "name": "canopen_base_driver"
+            },
+            {
+                "dependencies": [
+                    "canopen_base_driver",
+                    "canopen_core",
+                    "canopen_interfaces",
+                    "rclcpp",
+                    "rclcpp_components",
+                    "rclcpp_lifecycle",
+                    "std_msgs",
+                    "std_srvs"
+                ],
+                "name": "canopen_proxy_driver"
+            }
+        ],
+        "cpplint_errors": 1715,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": true,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/rickarmstrong/ekf_slam_sim.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1747465380,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_msgs",
+                    "nav_msgs",
+                    "apriltag_ros_interfaces",
+                    "eigen3_cmake_module",
+                    "eigen"
+                ],
+                "name": "ekf_slam_sim"
+            }
+        ],
+        "cpplint_errors": 51,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": true,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/pf-robotics/kachaka-api.git",
+        "contributors": 22,
+        "branch_count": 12,
+        "last_update": 1748436443,
+        "packages": [
+            {
+                "dependencies": [
+                    "joint_state_publisher",
+                    "robot_state_publisher",
+                    "urdf",
+                    "xacro"
+                ],
+                "name": "kachaka_description"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_action",
+                    "rclcpp_components",
+                    "rcl",
+                    "rcl_interfaces",
+                    "rcutils",
+                    "rmw",
+                    "rmw_implementation_cmake",
+                    "tf2_ros",
+                    "tf2_msgs",
+                    "camera_info_manager",
+                    "cv_bridge",
+                    "libopencv-dev",
+                    "std_msgs",
+                    "std_srvs",
+                    "sensor_msgs",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "diagnostic_msgs",
+                    "kachaka_interfaces"
+                ],
+                "name": "kachaka_grpc_ros2_bridge"
+            },
+            {
+                "dependencies": [
+                    "std_msgs",
+                    "sensor_msgs",
+                    "geometry_msgs"
+                ],
+                "name": "kachaka_interfaces"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "kachaka_interfaces"
+                ],
+                "name": "kachaka_smart_speaker"
+            },
+            {
+                "dependencies": [
+                    "nav2_common",
+                    "navigation2",
+                    "launch_ros"
+                ],
+                "name": "kachaka_nav2_bringup"
+            },
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "kachaka_speak"
+            },
+            {
+                "dependencies": [
+                    "std_msgs",
+                    "rclpy",
+                    "common_interfaces",
+                    "sensor_msgs",
+                    "kachaka_interfaces"
+                ],
+                "name": "kachaka_follow"
+            },
+            {
+                "dependencies": [
+                    "cv_bridge",
+                    "rclcpp",
+                    "sensor_msgs"
+                ],
+                "name": "kachaka_vision"
+            }
+        ],
+        "cpplint_errors": 116,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/ros-navigation/docs.nav2.org.git",
+        "contributors": 173,
+        "branch_count": 5,
+        "last_update": 1749828915,
+        "packages": [],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/pedrala/WALLEVA.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1736273169,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "dual_bot"
+            },
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "move_to_goal"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/rigbetellabs/tortoisebot.git",
+        "contributors": 15,
+        "branch_count": 13,
+        "last_update": 1733936747,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "tortoisebot_description"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_components"
+                ],
+                "name": "v4l2_camera"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclpy"
+                ],
+                "name": "tortoisebot_firmware"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "tortoisebot_bringup"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "tortoisebot_imu"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "tortoisebot_navigation"
+            },
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "tortoisebot_control"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "tortoisebot_slam"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "tortoisebot_gazebo"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "sensor_msgs",
+                    "visualization_msgs",
+                    "geometry_msgs",
+                    "std_srvs"
+                ],
+                "name": "ydlidar_ros2_driver"
+            }
+        ],
+        "cpplint_errors": 3079,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": true,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/ros-navigation/navigation2.git",
+        "contributors": 318,
+        "branch_count": 21,
+        "last_update": 1749829018,
+        "packages": [
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_map_server"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_controller"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_system_tests"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_theta_star_planner"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "opennav_docking_core"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "opennav_docking_bt"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "opennav_docking"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_collision_monitor"
+            },
+            {
+                "dependencies": [
+                    "angles",
+                    "geometry_msgs",
+                    "libomp-dev",
+                    "nav2_common",
+                    "nav2_core",
+                    "nav2_costmap_2d",
+                    "nav2_util",
+                    "nav_msgs",
+                    "pluginlib",
+                    "rclcpp",
+                    "rclcpp_lifecycle",
+                    "std_msgs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "tf2_ros",
+                    "visualization_msgs",
+                    "eigen3_cmake_module",
+                    "eigen"
+                ],
+                "name": "nav2_mppi_controller"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_voxel_grid"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_smac_planner"
+            },
+            {
+                "dependencies": [
+                    "action_msgs",
+                    "behaviortree_cpp",
+                    "geometry_msgs",
+                    "nav2_common",
+                    "nav2_msgs",
+                    "nav2_util",
+                    "nav_msgs",
+                    "rclcpp",
+                    "rclcpp_action",
+                    "rclcpp_lifecycle",
+                    "sensor_msgs",
+                    "std_msgs",
+                    "std_srvs",
+                    "tf2",
+                    "tf2_ros"
+                ],
+                "name": "nav2_behavior_tree"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "navigation2"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_msgs"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_smoother"
+            },
+            {
+                "dependencies": [
+                    "nav2_common",
+                    "qtbase5-dev"
+                ],
+                "name": "nav2_rviz_plugins"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "geometry_msgs",
+                    "nav_msgs",
+                    "tf_transformations",
+                    "tf2_ros",
+                    "python3-transforms3d"
+                ],
+                "name": "nav2_loopback_sim"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_rotation_shim_controller"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_waypoint_follower"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake_python"
+                ],
+                "name": "nav2_common"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_velocity_smoother"
+            },
+            {
+                "dependencies": [
+                    "eigen",
+                    "nav2_common"
+                ],
+                "name": "nav2_constrained_smoother"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "geometry_msgs",
+                    "nav2_msgs",
+                    "action_msgs",
+                    "lifecycle_msgs"
+                ],
+                "name": "nav2_simple_commander"
+            },
+            {
+                "dependencies": [
+                    "nav2_common",
+                    "bond",
+                    "bondcpp",
+                    "builtin_interfaces",
+                    "geometry_msgs",
+                    "lifecycle_msgs",
+                    "nav2_msgs",
+                    "nav_msgs",
+                    "rcl_interfaces",
+                    "rclcpp",
+                    "rclcpp_action",
+                    "rclcpp_lifecycle",
+                    "std_msgs",
+                    "tf2",
+                    "tf2_geometry_msgs",
+                    "tf2_msgs",
+                    "tf2_ros",
+                    "pluginlib"
+                ],
+                "name": "nav2_util"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_core"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_regulated_pure_pursuit_controller"
+            },
+            {
+                "dependencies": [
+                    "geometry_msgs",
+                    "std_msgs",
+                    "rosidl_default_generators"
+                ],
+                "name": "nav_2d_msgs"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "dwb_plugins"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "dwb_core"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav_2d_utils"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "costmap_queue"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "dwb_critics"
+            },
+            {
+                "dependencies": [
+                    "builtin_interfaces",
+                    "geometry_msgs",
+                    "nav_2d_msgs",
+                    "std_msgs",
+                    "nav_msgs",
+                    "rosidl_default_runtime"
+                ],
+                "name": "dwb_msgs"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_dwb_controller"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_navfn_planner"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_route"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_planner"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_costmap_2d"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_graceful_controller"
+            },
+            {
+                "dependencies": [
+                    "nav2_common",
+                    "navigation2",
+                    "launch_ros"
+                ],
+                "name": "nav2_bringup"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_amcl"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_behaviors"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_lifecycle_manager"
+            },
+            {
+                "dependencies": [
+                    "nav2_common"
+                ],
+                "name": "nav2_bt_navigator"
+            }
+        ],
+        "cpplint_errors": 9646,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/peakyquest/basic-concepts-ros2.git",
+        "contributors": 3,
+        "branch_count": 3,
+        "last_update": 1727795394,
+        "packages": [
+            {
+                "dependencies": [
+                    "urdf",
+                    "xacro"
+                ],
+                "name": "urdfbot_description"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "ros2_basic_msgs"
+                ],
+                "name": "ros2_basic_python"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "rclcpp_action",
+                    "rclcpp_lifecycle",
+                    "std_msgs",
+                    "visualization_msgs",
+                    "nav2_util",
+                    "nav2_msgs",
+                    "nav_msgs",
+                    "geometry_msgs",
+                    "builtin_interfaces",
+                    "tf2_ros",
+                    "nav2_costmap_2d",
+                    "nav2_core",
+                    "pluginlib"
+                ],
+                "name": "custom_nav2_planner_plugin"
+            },
+            {
+                "dependencies": [
+                    "urdf",
+                    "xacro",
+                    "robot_state_publisher"
+                ],
+                "name": "r6bot_description"
+            },
+            {
+                "dependencies": [
+                    "urdf",
+                    "xacro",
+                    "robot_state_publisher"
+                ],
+                "name": "rrbot_description"
+            },
+            {
+                "dependencies": [
+                    "urdf",
+                    "xacro",
+                    "robot_state_publisher"
+                ],
+                "name": "rrbot_unit3"
+            },
+            {
+                "dependencies": [
+                    "hardware_interface",
+                    "pluginlib",
+                    "rclcpp",
+                    "rclcpp_lifecycle"
+                ],
+                "name": "my_robot_hardware_interface"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "nav2_map_server",
+                    "nav2_lifecycle_manager"
+                ],
+                "name": "map_server"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "nav2_controller",
+                    "nav2_bt_navigator",
+                    "nav2_recoveries"
+                ],
+                "name": "path_planner_server"
+            },
+            {
+                "dependencies": [
+                    "rclpy"
+                ],
+                "name": "cartographer_slam"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "ros2_basic_msgs"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "nav2_lifecycle_manager",
+                    "nav2_amcl",
+                    "nav2_map_server"
+                ],
+                "name": "localization_server"
+            }
+        ],
+        "cpplint_errors": 71,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/riolaf05/robot-ros.git",
+        "contributors": 3,
+        "branch_count": 5,
+        "last_update": 1707584021,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "robot_ros"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/neobotix/neo_simulation2.git",
+        "contributors": 6,
+        "branch_count": 14,
+        "last_update": 1747063785,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "neo_simulation2"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/qaz9517532846/zm_robot.git",
+        "contributors": 2,
+        "branch_count": 9,
+        "last_update": 1739697622,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "zm_robot_gazebo"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "zm_robot_description"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "geometry_msgs",
+                    "nav2_msgs",
+                    "action_msgs",
+                    "lifecycle_msgs"
+                ],
+                "name": "zm_robot_programing"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "zm_robot_navigation"
+            },
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "zm_robot_teleop"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/noshluk2/ROS2-Autonomous-Driving-and-Navigation-SLAM-with-TurtleBot3.git",
+        "contributors": 3,
+        "branch_count": 5,
+        "last_update": 1685070509,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "autonomous_tb3"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/pedrala/expo_bot.git",
+        "contributors": 3,
+        "branch_count": 4,
+        "last_update": 1736753021,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "expo_bot"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/robosoft-ai/turtlebot_gazebo_sm_library.git",
+        "contributors": 1,
+        "branch_count": 4,
+        "last_update": 1747265770,
+        "packages": [
+            {
+                "dependencies": [
+                    "nav2z_client",
+                    "multirole_sensor_client",
+                    "navigation2",
+                    "nav2_bringup",
+                    "robot_state_publisher",
+                    "ros_publisher_client",
+                    "ros_timer_client",
+                    "slam_toolbox",
+                    "smacc2",
+                    "std_msgs",
+                    "sr_all_events_go",
+                    "sr_event_countdown",
+                    "sr_conditional",
+                    "visualization_msgs",
+                    "tf2",
+                    "action_msgs"
+                ],
+                "name": "sm_dance_bot_warehouse"
+            },
+            {
+                "dependencies": [
+                    "nav2z_client",
+                    "multirole_sensor_client",
+                    "navigation2",
+                    "nav2_bringup",
+                    "robot_state_publisher",
+                    "ros_publisher_client",
+                    "ros_timer_client",
+                    "slam_toolbox",
+                    "smacc2",
+                    "std_msgs",
+                    "sr_all_events_go",
+                    "sr_event_countdown",
+                    "sr_conditional",
+                    "visualization_msgs",
+                    "tf2",
+                    "action_msgs"
+                ],
+                "name": "sm_dance_bot_warehouse_2"
+            },
+            {
+                "dependencies": [
+                    "nav2z_client",
+                    "multirole_sensor_client",
+                    "navigation2",
+                    "nav2_bringup",
+                    "robot_state_publisher",
+                    "ros_publisher_client",
+                    "ros_timer_client",
+                    "slam_toolbox",
+                    "smacc2",
+                    "std_msgs",
+                    "sr_all_events_go",
+                    "sr_event_countdown",
+                    "sr_conditional",
+                    "visualization_msgs",
+                    "tf2",
+                    "action_msgs"
+                ],
+                "name": "sm_dance_bot_warehouse_3"
+            },
+            {
+                "dependencies": [
+                    "nav2z_client",
+                    "multirole_sensor_client",
+                    "navigation2",
+                    "nav2_bringup",
+                    "robot_state_publisher",
+                    "ros_publisher_client",
+                    "ros_timer_client",
+                    "slam_toolbox",
+                    "smacc2",
+                    "std_msgs",
+                    "sr_all_events_go",
+                    "sr_event_countdown",
+                    "sr_conditional",
+                    "visualization_msgs",
+                    "tf2",
+                    "action_msgs"
+                ],
+                "name": "sm_dance_bot"
+            }
+        ],
+        "cpplint_errors": 1261,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/rimaturus/psd24_simulator.git",
+        "contributors": 2,
+        "branch_count": 7,
+        "last_update": 1744058581,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_msgs"
+                ],
+                "name": "psd_controller"
+            },
+            {
+                "dependencies": [
+                    "rclcpp"
+                ],
+                "name": "psd_gazebo_worlds"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "psd_vehicle_description"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_msgs",
+                    "SDL2"
+                ],
+                "name": "custom_teleop"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "psd_vehicle_bringup"
+            },
+            {
+                "dependencies": [
+                    "custom_msgs"
+                ],
+                "name": "psd_perception"
+            },
+            {
+                "dependencies": [
+                    "rclpy",
+                    "std_msgs",
+                    "geometry_msgs"
+                ],
+                "name": "psd_slam"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "custom_msgs"
+            }
+        ],
+        "cpplint_errors": 264,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/prajwalthakur/MPPI_ROS2.git",
+        "contributors": 2,
+        "branch_count": 3,
+        "last_update": 1746713366,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclpy",
+                    "nav2_core",
+                    "nav_msgs",
+                    "geometry_msgs",
+                    "sensor_msgs",
+                    "std_msgs"
+                ],
+                "name": "mppi_planner"
+            }
+        ],
+        "cpplint_errors": 0,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/pollen-robotics/reachy_2023.git",
+        "contributors": 16,
+        "branch_count": 23,
+        "last_update": 1743068807,
+        "packages": [
+            {
+                "dependencies": [
+                    "pluginlib"
+                ],
+                "name": "pid_command_controller"
+            },
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "mobile_base_sdk_server"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_srvs",
+                    "sensor_msgs"
+                ],
+                "name": "rplidar_ros2"
+            },
+            {
+                "dependencies": [
+                    "nav2_bringup"
+                ],
+                "name": "zuuu_description"
+            },
+            {
+                "dependencies": [
+                    "ros2launch"
+                ],
+                "name": "zuuu_hal"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "zuuu_interfaces"
+            },
+            {
+                "dependencies": [
+                    "hardware_interface",
+                    "pluginlib",
+                    "rclcpp",
+                    "rclcpp_lifecycle",
+                    "arm_hwi"
+                ],
+                "name": "arm_system_hwi"
+            },
+            {
+                "dependencies": [
+                    "hardware_interface",
+                    "pluginlib",
+                    "rclcpp",
+                    "rclcpp_lifecycle",
+                    "neck_hwi"
+                ],
+                "name": "neck_system_hwi"
+            },
+            {
+                "dependencies": [
+                    "hardware_interface",
+                    "pluginlib",
+                    "rclcpp",
+                    "rclcpp_lifecycle",
+                    "head_hwi"
+                ],
+                "name": "head_system_hwi"
+            },
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "fans_controller"
+            },
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "dynamic_state_router"
+            },
+            {
+                "dependencies": [
+                    "ament_copyright",
+                    "ament_flake8",
+                    "ament_pep257",
+                    "python3-pytest"
+                ],
+                "name": "camera_controllers"
+            },
+            {
+                "dependencies": [
+                    "reachy_msgs",
+                    "std_msgs",
+                    "sensor_msgs"
+                ],
+                "name": "gripper_safe_controller"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "reachy_bringup"
+            }
+        ],
+        "cpplint_errors": 2653,
+        "readme": true,
+        "changelog": false,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/pal-robotics/tiago_simulation.git",
+        "contributors": 41,
+        "branch_count": 13,
+        "last_update": 1749120630,
+        "packages": [
+            {
+                "dependencies": [
+                    "ament_cmake_auto"
+                ],
+                "name": "tiago_gazebo"
+            },
+            {
+                "dependencies": [
+                    "ament_cmake"
+                ],
+                "name": "tiago_simulation"
+            },
+            {
+                "dependencies": [
+                    "tiago_gazebo"
+                ],
+                "name": "tiago_multi"
+            }
+        ],
+        "cpplint_errors": 18,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    },
+    {
+        "url": "https://github.com/ohhyungyu/LOS-fuzz.git",
+        "contributors": 1,
+        "branch_count": 3,
+        "last_update": 1744718557,
+        "packages": [
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "tutorial_interfaces"
+                ],
+                "name": "client_service_example"
+            },
+            {
+                "dependencies": [
+                    "rosidl_default_generators"
+                ],
+                "name": "tutorial_interfaces"
+            },
+            {
+                "dependencies": [
+                    "rclcpp",
+                    "std_msgs"
+                ],
+                "name": "publisher_subscriber_example"
+            }
+        ],
+        "cpplint_errors": 4213,
+        "readme": true,
+        "changelog": true,
+        "continuous_integration": false,
+        "rosinstall": false,
+        "closed_pull_requests": 0,
+        "issue_durations": [],
+        "open_pull_requests": 0,
+        "open_issues": 0,
+        "stars": -1
+    }
+]
